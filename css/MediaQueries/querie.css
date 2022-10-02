@@ -1,0 +1,116 @@
+@media(max-width:991px){
+    .navbar .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar .container .nav-links{
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 56%;
+        width: 100%;
+        position: absolute;
+    z-index: 2;
+    margin-top: 433px;
+        background-color: #f3f3f3;
+        border-bottom: 2px solid #bbbbbb;
+
+    }
+    
+    .navbar .container .logo{
+        font-size: 1.5rem;
+        color: #806203;
+        text-decoration: none;
+        font-family: Courgette;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .container .logo a.menu{
+        font-size: 1.5rem;
+        color: #806203;
+        display: block;
+    }
+    .navbar .container .nav-links a{
+        margin: 15px;
+        
+        font-size: 20px;
+    }
+}
+@media(max-width: 1283px){
+    .piePagina .logo{
+        width: 100%;
+    }
+    .piePagina .logo h1{
+        font-family: Courgette;
+        color: #806203;
+        text-align: center;
+    }
+}
+@media(max-width: 898px){
+    .promo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .promBtn{
+        background: #806203;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 15px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    .imagePromo{
+        width: 100%;
+        height:200px;
+        margin: 0%;
+    }
+    .informationPromo{
+        width: 90%;
+        margin: 0% 5%;
+        color: rgb(95, 95, 95);
+    }
+    .informationPromo h2{
+        color: rgb(54, 54, 54);
+    }
+    .imagePromo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .imagePromoBg{
+        margin-top: 40px;
+    }
+    .elements {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cartContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 2% 5%;
+    }
+    .pay {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 2% 5%;
+    }
+}

@@ -1,0 +1,904 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif!important;
+    background-color: #f5f5f5;
+}
+.center-text{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 43px;
+}
+.navbar .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+}
+.navbar .container .logo{
+    font-size: 1.5rem;
+    color: #806203;
+    text-decoration: none;
+    font-family: Courgette;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .container .logo a.menu{
+    font-size: 1.5rem;
+    color: #806203;
+    display: none;
+}
+.goldenColor{
+    color: #806203;
+}
+.animate__animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: scrollAnimation;
+    animation-direction: alternate;
+
+
+}
+.animate__fadeInDown{
+    animation-name: animate__fadeOutLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes scrollAnimation {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    } 
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes animate__fadeOutLeft {
+    0%{
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+    100%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+.show{
+    display: flex;
+}
+.systemOp{
+    display: flex;
+    flex-direction: row;
+}
+.navbar .container .nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .container .nav-links a{
+    margin: 0% 20px;
+    color: #806203;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+#slider {
+	position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+#slider #line {
+	height: 5px;
+	background: rgba(0,0,0,0.5);
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#slider #dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+#slider #dots li {
+	transition: 0.3s;
+	list-style-type: none;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background: rgba(0,0,0,0.5);
+	margin: 0 0.25em;
+	cursor: pointer;
+}
+
+#slider #dots li:hover,
+#slider #dots li.active {
+	background: white;
+}
+
+@keyframes line {
+
+	0% {width: 0%;}
+	100% {width: 100%;}
+
+}
+
+#slider #back,
+#slider #forword {
+	width: 6%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: 0.3s;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	color: white;
+	font-weight: 700;
+    font-size: 2rem;
+	}
+
+#slider #forword {
+	left: auto;
+	right: 0;
+	}
+
+#slider:hover #back,
+#slider:hover #forword {
+	opacity: 0.7;
+}
+
+ul#move {
+	margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background: gray;
+    margin-right: 100%;
+}
+#line{
+    display: none;
+}
+
+/*CARD CAROUSEL*/
+
+.course-date, .course-duration, .series-length {
+	font-family: 'Gotham-Book',Helvetica,Arial,Lucida,sans-serif;
+	font-size: 12px;
+	color: #222;
+	font-weight: 700;
+}
+.course-duration-blog {
+	font-family: 'Gotham-Book',Helvetica,Arial,Lucida,sans-serif;
+	font-size: 12px;
+	color: #222;
+	font-weight: 700;
+	position: absolute;
+	bottom: 5%;
+}
+.slide-row {
+  padding: 50px 0px;
+}
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: rgb(97, 37, 37);
+}
+
+.carousel-cell {
+    width:25%;
+    padding:0px 5px;
+}
+
+.carousel-cell img {
+    width:100% !important;
+    height:auto;
+}
+
+@media (min-width: 768px) and (max-width:980px){
+    .carousel-cell {
+        width:33.333333%
+    }
+}
+@media (max-width:767px){
+    .carousel-cell {
+        width:50%
+    }
+}
+@media (max-width:479px){
+    .carousel-cell {
+        width:100%
+    }
+}
+/*Lower Page Dots*/
+ol.flickity-page-dots {
+  bottom: -50px;
+}
+
+li.dot {
+    border: 2px solid #806203 !important;
+}
+.flickity-page-dots .dot.is-selected {
+    background:#b89e4b;
+}
+
+.carousel-card {
+    height:400px!important;
+   background:rgb(230, 230, 230);
+   border-radius: 20px;
+   overflow: hidden;
+}
+.carousel-card img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.buttonCard{
+    margin-top: 30px;
+}
+.botonMore{
+    background: #806203;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.main-carousel .carousel-card .card-description {
+    padding: 10px;
+  }
+ul#move li {
+	transition: 0.6s;
+	min-width: 100%;
+	color: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul#move li img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin:5% 10%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.footer{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.extLinks, .loc{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: left;
+    flex-wrap: wrap;
+    margin: 0px 80px;
+}
+.contactInf{
+    margin: 0px 80px;
+}
+
+.extLinks a, .loc a{
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+    margin: 10px 0px;
+}
+.contactInf p{
+    color: rgb(116, 116, 116);
+    
+}
+.piePagina .logo h1{
+    font-family: Courgette;
+    color: #806203;
+}
+/*promo*/
+.promo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 5% 10%;
+
+}
+
+.promBtn{
+    background: #806203;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.imagePromo{
+    width: 40%;
+    margin: 0% 5%;
+    
+}
+.informationPromo{
+    width: 60%;
+    color: rgb(95, 95, 95);
+}
+.informationPromo h2{
+    color: rgb(54, 54, 54);
+}
+.imagePromo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a.activeLink{
+    background-color: #b89e4b;
+    color: white!important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/*Estilos de categorias*/
+.infoPrev{
+    width: 60%;
+    margin: 1% 20%; 
+    color: rgb(66, 66, 66);
+}
+.containerCat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.cat{
+    width: 200px;
+    height: 150px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content{
+    backdrop-filter: brightness(0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+.Galletas{
+    background: url("https://i.ytimg.com/vi/hZ9wrNqFULE/maxresdefault.jpg");
+    background-size: cover;
+    backdrop-filter: opacity(0.5);
+}
+.Pan{
+    background: url("https://harinas.monisa.com/wp-content/uploads/2018/10/Pan-Simple.jpg");
+    background-size: cover;
+    backdrop-filter: opacity(0.5);
+}
+.Pasteles{
+    background: url("https://i.pinimg.com/550x/98/f7/d8/98f7d845e1279b05fa19eaa71e5d7109.jpg");
+    background-size: cover;
+    backdrop-filter: opacity(0.5);
+}
+.Postres{
+    background: url("https://www.cocinacaserayfacil.net/wp-content/uploads/2021/01/Postres-caseros-faciles_1.jpg");
+    background-size: cover;
+    backdrop-filter: opacity(0.5);
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.product{
+    width: 25%;
+    min-width: 250px;
+    height: 400px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.productImg{
+    width: 100%;
+    height: 40%;
+}
+.productImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productInfo{
+    padding: 10px;
+}
+.productInfo h3{
+    color: #222;
+}
+.productInfo p{
+    color: rgb(97, 97, 97);
+}
+h3.price{
+    color: green;
+}
+.productPrice a{
+    color: white;
+    background-color: #b6921b;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.promoBg{
+    background-color: rgb(252, 173, 173);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.imagePromoBg{
+    margin-left: 5%;
+    margin-right: 0%;
+}
+.informationPromoBg{
+    padding: 20px;
+}
+.informationPromoBg h2{
+    color: white;
+}
+.informationPromoBg p{
+    color: #544848;
+}
+.botonPromBg{
+    margin-top: 36px;
+}
+.botonPromBg a{
+    background: #e5b735;
+}
+
+/*TEAM CARDS*/
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.cardTeam{
+    width: 300px;
+    padding: 10px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;  
+    margin: 20px;
+}
+.imgTeam{
+    width: 64%;
+    height: 190px;
+    border-radius: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.imgTeam img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infoTeam{
+    text-align: center;
+}
+/*Ventana modal para agregar productos al carrito*/
+.close{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 78px;
+    margin-top: 26px;
+    font-size: 30px;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+}
+/*ANIMACION DE ABRIR MODAL*/
+
+.Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://pastelerialostulipanes.com/wp-content/uploads/2022/02/SelvaNegra.jpg");
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: 0.3s;
+    animation: openModal 0.2s;
+}
+
+
+/*ANIMACION DE CERRAR MODAL*/
+.modalOut{
+    animation: closeModal 0.2s;
+}
+@keyframes closeModal{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+};
+@keyframes openModal{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+};
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+.formulario{
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 26px;
+}
+.act {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.act input {
+    width: 300px;
+    margin-bottom: 13px;
+    border: none;
+    background: #d9d9d9;
+    height: 28px;
+    border-radius: 25px;
+    padding: 3px;
+}
+
+.pastelP{
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 2px;
+
+}
+.botonNext{
+    margin-top: 10px;
+}
+.botonNext a, a.backButton{
+    background-color: #6e70ce;
+    cursor: pointer; 
+}
+.btnText{
+    font-size: 16px;
+    background-color: #259409;
+    cursor: pointer;
+}
+.formSep2{
+    display: none;
+}
+.outForm{
+    animation: backForm 1s;
+}
+.inForm{
+    animation: nextForm 1s;
+}
+@keyframes nextForm{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes backForm{
+    0%{
+        transform: translateX(-100);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/*NOSOTROS*/
+.imgN{
+    width: 80%;
+    margin: 2% 10%;
+    height: 400px;
+}
+.textNosotros{
+    width: 80%;
+    margin: 2% 10%;
+}
+.history{
+    text-align: justify;
+    color: rgb(97, 97, 97);
+}
+.imgN img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contactInform{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.boxSocial{
+    width: 100px;
+    height: 100px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.boxSocial a{
+    text-decoration: none;
+    font-size: 50px;
+}
+a.fbk{
+    color: rgb(94, 94, 255);
+}
+a.wa{
+    color: rgb(36, 241, 81);
+}
+.logo h2{
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/*Estilos del carrito*/
+.cartContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2% 5%;
+}
+.elements{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.pay{
+    width: 20%;
+}
+.element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(233 233 233);
+    border-radius: 33px;
+    transition: 0.3s;
+    margin: 10px 0px;
+
+}
+.elementImage{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 20px;
+    
+}
+.imageCir img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.infoOp{
+    width: 40%;
+}
+.elementInfo h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(75, 75, 75);
+}
+.elementInfo p{
+    color: rgb(42, 216, 19);
+    font-weight: bold;
+}
+.op{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+button.btn.btn-quantity {
+    margin: 13px;
+    border: none;
+    padding: 5px 7px;
+    border-radius: 500px;
+    background: #5c5c5c;
+    color: white;
+    cursor: pointer;
+}
+.delete{
+    margin-right: 28px;
+}
+.quantity input{
+    width: 20px;
+    border: none;
+    padding: 5px 11px;
+    border-radius: 500px;
+    text-align: center;
+}
+.imageCir{
+    width: 100px;
+    height: 100px;
+    border-radius: 500px;
+    object-fit: cover;
+    overflow: hidden;
+}
+button.btn-delete{
+    margin: 13px;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 500px;
+    color: black;
+    cursor: pointer;
+}
+.pay{
+    border-radius: 30px;
+    margin: 40px;
+}
+.pay h3{
+    color: rgb(75, 75, 75);
+}
+.pay h3 span, .card-description p{
+    color: rgb(42, 216, 19);
+}
+.alerta{
+    text-align: center;
+    background-color: #dbad15;
+    font-weight: bold;
+    display: none;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+
+}
+
+@keyframes alert{
+    0%{
+        transform: translateY(-100%);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.productPrice h3{
+    color: green;
+}
+.productInfo{
+    height: 49%;
+    padding: 20px;
+    margin-top: -10px;
+}
+.productImg {
+    width: 100%;
+    height: 51%;
+}
+.product {
+    width: 25%;
+    min-width: 250px;
+    height: 347px;
+    background: rgb(230, 230, 230);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
