@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="тут краткое описание страницы, чтобы заманить посетителя">
+  <meta name="keywords" content="разные, ключевые, слова, скидки, распродажа, и тд">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/base/normalize.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/login.css">
+  <!--	<script src="http://..."></script>-->
+  <title>Form LogIn</title>
+
+</head>
+<body>
+    <body>
+      <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">INICIAR SESIÓN</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">REGISTRARSE</label>
+            <div class="login-form">
+
+                <!-- INICIAR SESION -->
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Nombre</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="group">
+                        <input style="cursor: pointer ;" id="inicio" type="button" class="button" value="Volver a inicio">
+                    </div>
+                </div>
+
+                <!-- CREAR UNA CUENTA -->
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Nombres</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Apellidos</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Fecha de Nacimiento</label>
+                        <input id="user" type="date" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Edad</label>
+                        <input id="user" type="number" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Telefono</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="user" class="label">Contraseña</label>
+                        <input id="user" type="password" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign Up">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      
+<script src="js/login.js"></script>
+</body>
+</html>

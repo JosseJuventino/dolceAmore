@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!------------------....ESTILOS LOCALES......-------------->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/MediaQueries/querie.css">
+
+    <!------------------....ICONOS......-------------->
+    <script src="https://kit.fontawesome.com/79aabc3f90.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <!------------------....HEADER......-------------->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Dolce Amore</h1>
+                    <a id="menu-click" href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <a href="index.html">Inicio</a>
+
+                    <a href="menu.html">Menu</a>
+                    <a href="categories.html">Categorias</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="contact.html">Contactanos</a>
+                    <div class="systemOp">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                        <a class="activeLink" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2 class="center-text goldenColor">Your Shopping Cart</h2>
+        <div class="cartContainer" >
+            <div class="elements" id="cartContainer">
+            </div>
+            <div class="pay">
+                <h2 class="center-text goldenColor">Total a pagar: </h2>
+                <h3 class="center-text">Subtotal: <span>$</span> <span id="precioTotal">900</span> </h3>
+            </div>
+        </div>
+    </main>
+
+<!------------------....FOOTER......-------------->
+
+<footer class="piePagina">
+    <div class="logo">
+        <h1>Dolce Amore</h1>
+    </div>
+    <div class="footer">
+        <div class="extLinks">
+            <h2>Extra Links</h2>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+        </div>
+        <div class="loc">
+            <h2>Locations</h2>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+            <a href="#">Test Link</a>
+        </div>
+        <div class="contactInf">
+            <h2>Contact Info</h2>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+        </div>
+    </div>
+
+</footer>
+<script>
+    
+</script>
+    <script src="js/loadCart.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+   
+    
+</body>
+
+</html>

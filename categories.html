@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!------------------....ESTILOS LOCALES......-------------->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/MediaQueries/querie.css">
+
+    <!------------------....ICONOS......-------------->
+    <script src="https://kit.fontawesome.com/79aabc3f90.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="alerta" id="alert">
+        <p> <i class="fa-solid fa-check"></i> El producto se ha agregado correctamente al carrito</p>
+    </div>
+    <!------------------....HEADER......-------------->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Dolce Amore</h1>
+                    <a id="menu-click" href="#" class="menu"><i class="fa-solid fa-bars"></i></a>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <a  href="index.html">Inicio</a>
+
+                    <a href="menu.html">Menu</a>
+                    <a class="activeLink" href="categories.html">Categorias</a>
+                    <a href="contact.html">Nosotros</a>
+                    <a href="contact.html">Contactanos</a>
+                    <div class="systemOp">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!------------------....CATEGORIAS......-------------->
+    <h2 class="center-text goldenColor">Categorias</h2>
+    <p class="center-text infoPrev">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio neque tempore molestiae dolorum impedit totam corrupti temporibus expedita nostrum autem ea deleniti quibusdam doloremque, laboriosam veritatis sit? Magnam, eum voluptatibus!</p>
+
+    <!--La imagen de fondo de las categorias estan en el css, linea 420-------------->
+    <div class="containerCat">
+        <div class="Galletas cat">
+            <div class="content">
+                <h3>Galletas</h3>
+            </div>
+        </div>
+            
+        <div class="Pasteles cat">
+            <div class="content">
+                <h3>Pasteles</h3>
+            </div>
+        </div>
+        <div class="Postres cat">
+            <div class="content">
+                <h3>Postres</h3>
+            </div>
+        </div>
+        <div class="Pan cat">
+            <div class="content">
+                <h3>Pan</h3>
+            </div>
+        </div>
+    </div>
+    <!------------FORMULARIO DE BUSQUEDA Y FILTROS-------------->
+    <h2 class="center-text goldenColor">Pasteles</h2>
+    <div class="cardContainer">
+        <div class="product">
+            <div class="productImg">
+                <img class="imageCart" src="https://cdn2.cocinadelirante.com/sites/default/files/images/2016/07/pasteldechocolateconcoca.jpg" alt="">
+            </div>
+            <div class="productInfo">
+                <h3 class="nameP">Pastel de chocolate</h3>
+                <div class="productPrice">
+                    <h3>$ <span class="price">500</span></h3>
+                    <a href="#" class="btn btnCart"><i class="fa-solid fa-cart-shopping"></i> Añadir a carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="productImg">
+                <img class="imageCart" src="https://dam.cocinafacil.com.mx/wp-content/uploads/2014/04/pastel-de-vainilla.jpg" alt="">
+            </div>
+            <div class="productInfo">
+                <h3 class="nameP">Pastel de vainilla</h3>
+                <div class="productPrice">
+                    <h3>$ <span class="price">200</span></h3>
+                    <a href="#" class="btn btnCart"><i class="fa-solid fa-cart-shopping"></i> Añadir a carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="productImg">
+                <img class="imageCart" src="https://www.elmundoeats.com/wp-content/uploads/2020/11/FP-Nutella-stuffed-chocolate-chunk-cookies.jpg" alt="">
+            </div>
+            <div class="productInfo">
+                <h3 class="nameP">Galletas rellenas</h3>
+                <div class="productPrice">
+                    <h3>$ <span class="price">10</span></h3>
+                    <a href="#" class="btn btnCart"><i class="fa-solid fa-cart-shopping"></i> Añadir a carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="productImg">
+                <img class="imageCart" src="https://cdn2.cocinadelirante.com/sites/default/files/images/2016/07/pasteldechocolateconcoca.jpg" alt="">
+            </div>
+            <div class="productInfo">
+                <h3 class="nameP">Pastel de chocolate</h3>
+                <div class="productPrice">
+                    <h3>$ <span class="price">190</span></h3>
+                    <a href="#" class="btn btnCart"><i class="fa-solid fa-cart-shopping"></i> Añadir a carrito</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!------------------....FOOTER......-------------->
+
+    <footer class="piePagina">
+        <div class="logo">
+            <h1>Dolce Amore</h1>
+        </div>
+        <div class="footer">
+            <div class="extLinks">
+                <h2>Extra Links</h2>
+                <a href="#">Test Link</a>
+                <a href="#">Test Link</a>
+                <a href="#">Test Link</a>
+            </div>
+            <div class="loc">
+                <h2>Locations</h2>
+                <a href="#">Test Link</a>
+                <a href="#">Test Link</a>
+                <a href="#">Test Link</a>
+            </div>
+            <div class="contactInf">
+                <h2>Contact Info</h2>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/getCart.js"></script>
+</body>
+
+</html>
